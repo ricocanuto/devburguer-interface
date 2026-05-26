@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { createContext, useContext, useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
 
 const CartContext = createContext({});
 
@@ -29,7 +30,18 @@ export const CartProvider = ({ children }) => {
 
       setCartProducts(newCartProducts);
       saveCart(newCartProducts);
-    };
+
+    // ✅ Toast disparado aqui — funciona para qualquer componente que chame putProductInCart
+        toast.success(`${product.name} adicionado ao carrinho!`, {
+          position: 'bottom-right',
+          autoClose: 2000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          icon: '🛒',
+        });
+      };
 
   useEffect(() => {
       const clientCartData = localStorage.getItem('devburguer:cartInfo');

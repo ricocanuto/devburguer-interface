@@ -37,7 +37,7 @@ export const Title = styled.div`
 
   &::after {
     position: absolute;
-    left: calc(50% + -28px);
+    left: calc(50% -28px);
     bottom: 0;
     content: '';
     width: 56px;
@@ -53,4 +53,18 @@ export const Content = styled.div`
     max-width: 1280px;
     padding: 40px;
     margin: 0 auto;
+
+    /*Tablet*/
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr 35%;
+      gap: 24px;
+      padding: 24px;
+    }
+
+    /*Mobile*/
+    @media (max-width:768px) {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 16px;
+  }
 `;
