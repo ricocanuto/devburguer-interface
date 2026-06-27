@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { api } from '../../../services/api';
 import { formatDate } from '../../../utils/formatDate';
-import { orderStatusOptions } from './orderStatus';
+import { orderStatusOptions } from './OrderStatus';
 import { ProductImg, SelectStatus } from './styles';
 
 export function Row({ row, setOrders, orders }) {
