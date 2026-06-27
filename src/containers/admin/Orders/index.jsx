@@ -8,7 +8,7 @@ import TableRow from '@mui/material/TableRow';
 
 import { useEffect, useState } from 'react';
 import { api } from '../../../services/api';
-import { orderStatusOptions } from './orderStatus';
+import { orderStatusOptions } from './OrderStatus';
 import { Row } from './row';
 import { Filter, FilterOption } from './styles';
 
