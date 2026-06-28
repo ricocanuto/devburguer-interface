@@ -17,7 +17,7 @@ export const LeftContainer = styled.div`
   background-size: cover;
   background-position: center;
 
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   max-width: 50%;
 
@@ -36,8 +36,9 @@ export const RightContainer = styled.div`
   align-items: center;
   flex-direction: column;
 
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
+  
   max-width: 50%;
 
   background: url(${Background});
