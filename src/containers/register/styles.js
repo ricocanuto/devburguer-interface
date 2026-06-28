@@ -7,7 +7,7 @@ export const Container = styled.div`
   display: flex;
   width: 100vw;
   min-height: 100vh; /* 👈 Garante que o fundo estique se o conteúdo crescer */
-  background: url(${BackgroundImg}); /* Se o seu bg estiver aqui */
+  background: url(${Background}); 
   background-size: cover;
   background-position: center;
 `;
