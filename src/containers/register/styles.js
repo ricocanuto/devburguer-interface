@@ -5,8 +5,11 @@ import BackgroundLogin from '../../assets/bgLogin.png';
 
 export const Container = styled.div`
   display: flex;
-  height: 100vh;
   width: 100vw;
+  min-height: 100vh; /* 👈 Garante que o fundo estique se o conteúdo crescer */
+  background: url(${BackgroundImg}); /* Se o seu bg estiver aqui */
+  background-size: cover;
+  background-position: center;
 `;
 
 export const LeftContainer = styled.div`
@@ -64,7 +67,8 @@ export const Form = styled.form`
   gap: 20px;
   padding: 20px;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
+  overflow-y: auto;
 `;
 
 export const InputContainer = styled.div`
