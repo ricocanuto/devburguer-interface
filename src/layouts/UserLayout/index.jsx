@@ -1,5 +1,6 @@
 import { Navigate, Outlet } from 'react-router-dom';
 import { Footer, Header } from '../../components';
+import { useUser } from '../../hooks/UserContext';
 
 export function UserLayout() {
     // 1. Busca os dados do usuário salvos no navegador (ajuste a chave se o nome for diferente)
