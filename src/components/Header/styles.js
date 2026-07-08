@@ -6,6 +6,13 @@ export const Container = styled.div`
   width: 100%;
   height: 72px;
   padding: 0 56px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
 `;
 export const Content = styled.div`
   display: flex;
@@ -32,7 +39,10 @@ export const Navigation = styled.nav`
   hr {
     height: 24px;
     border: 1px solid ${props => props.theme.darkGray};
-
+  }
+  @media (max-width: 480px) {
+    gap: 12px;
+    font-size: 14px;
   }
 `;
 export const HeaderLink = styled(Link)`
